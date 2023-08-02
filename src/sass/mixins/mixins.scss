@@ -1,0 +1,17 @@
+/// Mixin helper to output vendor prefixes
+/// @access public
+/// @author KittyGiraudel
+/// @param {String} $property - Unprefixed CSS property
+/// @param {*} $value - Raw CSS value
+/// @param {List} $prefixes - List of prefixes to output
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+/*
+example:
+    @include prefix(transform, rotate(90deg), ('webkit', 'ms'));
+*/

@@ -1,0 +1,36 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "saurabh verma",
+  "license": "ISC",
+  "dependencies": {
+    "contentful": "^10.4.0",
+    "gsap": "^3.12.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-icons": "^4.10.1",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.64.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

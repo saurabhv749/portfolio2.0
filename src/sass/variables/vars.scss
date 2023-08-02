@@ -1,0 +1,74 @@
+/************************/
+/*      VARIABLES      */
+/**********************/
+
+:root {
+  // colors
+  --clr-dark: 235 21% 21%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+  // font sizes
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-500: 2rem;
+  --fs-400: 1.75rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  --scrollbar-width: 0px;
+  --header-height: 80px;
+  --sec-margin: 100px;
+  --sec-padding: 50px;
+  --content-padding-top: 50px;
+  --word-spacing: 2px;
+  --md-box-shadow1: #8f8e8e26 2px 2px 5px 0px;
+  --md-box-shadow2: #8f8e8e26 2px 2px 8px 3px;
+  --box-shadow-light: 0px 3.4px 3.2px #8f8e8e26;
+}
+//
+
+// snippets
+
+%secTitle {
+  font-weight: 600;
+  font-size: var(--fs-600);
+  color: hsl(var(--clr-dark) / 1);
+  .count {
+    color: hsl(var(--clr-dark) / 0.8);
+  }
+}
+
+%posFixedTL {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+%posAbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+%fullscreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+%fadeConfig {
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+%custom-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-size: var(--fs-400);
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 200ms ease, background-color 200ms ease-out;
+  border: none;
+}
